@@ -1,0 +1,14 @@
+name = "Lean First Steps"
+version = "0.1.0"
+defaultTargets = ["lean first steps"]
+
+[[lean_lib]]
+name = "«Lean First Steps»"
+
+[[lean_exe]]
+name = "lean first steps"
+root = "Main"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4.git"
