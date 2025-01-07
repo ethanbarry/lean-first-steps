@@ -20,7 +20,7 @@ example {a b : ℕ} (hab : a > 5 ↔ b = 6) (hb : b = 6) : ¬ a = 5 := by
     exact ha
   contradiction
 
--- Second Solution without contradiction, due to Daniel James:
+-- Second solution without contradiction, due to Daniel James:
 -- https://leanprover.zulipchat.com/#narrow/channel/113489-new-members/topic/Would.20someone.20please.20tell.20me.20how.20I'd.20simplify.20this.20proof.3F/near/490617790
 example {a b : ℕ} (hab : a > 5 ↔ b = 6) (hb : b = 6) : ¬ a = 5 := by
   have ha : a > 5 := hab.mpr hb
